@@ -13,8 +13,27 @@
   ],
   "Image": "test.png",
   "Resources": [
-    {
-      "Name": "Collection-only"
+     {
+        "Name": "GeoJSON source",
+        "Style": "https://workspace-ui-public.earthcode-publishing-support.earthcode.eox.at/api/public/share/public-3a71hc0d3-101/stormtracker_style.json",
+        "TimeEntries": [
+            {
+                "Time": "20250101",
+                "Assets": [
+                    {
+                        "Identifier": "clusters_summary",
+                        "Title": "Clusters Overview",
+                        "File": "https://raw.githubusercontent.com/ESA-EarthCODE/catalog_earthcare_stormtracker/refs/heads/main/assets/EC_lightning_clusters.json"
+                    }
+                ]
+            }
+        ],
+        "Bbox": [
+            -90,
+            -180,
+            90,
+            180
+        ]
     }
   ]
 }
