@@ -15,7 +15,7 @@
       "href": "./stormtracker/collection.json",
       "type": "application/json",
       "title": "Storm Tracker",
-      "endpointtype": "Collection-only",
+      "endpointtype": "GeoJSON source",
       "id": "stormtracker",
       "themes": [
         "Lightning"
@@ -85,18 +85,24 @@
     "spatial": {
       "bbox": [
         [
-          -180.0,
           -90.0,
-          180.0,
-          90.0
+          -180.0,
+          90.0,
+          180.0
+        ],
+        [
+          -90.0,
+          -180.0,
+          90.0,
+          180.0
         ]
       ]
     },
     "temporal": {
       "interval": [
         [
-          "2026-03-26T15:36:38.494128Z",
-          "2026-03-26T15:36:38.494128Z"
+          "2025-01-01T00:00:00Z",
+          "2025-01-01T00:00:00Z"
         ]
       ]
     }

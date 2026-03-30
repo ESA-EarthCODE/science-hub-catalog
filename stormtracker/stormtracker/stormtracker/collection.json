@@ -11,6 +11,14 @@
       "title": "EarthCODE EarthCARE Storm Tracker Catalog"
     },
     {
+      "rel": "style",
+      "href": "https://workspace-ui-public.earthcode-publishing-support.earthcode.eox.at/api/public/share/public-3a71hc0d3-101/stormtracker_style.json",
+      "type": "text/vector-styles",
+      "asset:keys": [
+        "clusters_summary"
+      ]
+    },
+    {
       "rel": "parent",
       "href": "../collection.json",
       "type": "application/json",
@@ -21,30 +29,38 @@
   "themes": [
     "Lightning"
   ],
-  "endpointtype": "Collection-only",
+  "endpointtype": "GeoJSON source",
   "title": "Storm Tracker",
   "extent": {
     "spatial": {
       "bbox": [
         [
-          -180.0,
           -90.0,
-          180.0,
-          90.0
+          -180.0,
+          90.0,
+          180.0
         ]
       ]
     },
     "temporal": {
       "interval": [
         [
-          "2026-03-26T15:36:38.494128Z",
-          null
+          "2025-01-01T00:00:00Z",
+          "2025-01-01T00:00:00Z"
         ]
       ]
     }
   },
   "license": "other",
   "assets": {
+    "geoparquet": {
+      "href": "./items.parquet",
+      "type": "application/vnd.apache.parquet",
+      "title": "GeoParquet Items",
+      "roles": [
+        "collection-mirror"
+      ]
+    },
     "thumbnail": {
       "href": "https://raw.githubusercontent.com/ESA-EarthCODE/catalog_earthcare_stormtracker/main/assets/test.png",
       "type": "image/png",
