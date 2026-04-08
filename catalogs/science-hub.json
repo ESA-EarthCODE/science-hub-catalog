@@ -1,0 +1,12 @@
+{
+  "id": "science-hub",
+  "title": "Science Hub Catalog",
+  "description": "Catalog for Science Hub Dashboard",
+  "endpoint": "https://ESA-EarthCODE.github.io/science-hub-catalog/science-hub/",
+  "default_base_layers": "layers/baselayers",
+  "default_overlay_layers": "layers/overlays",
+  "assets_endpoint": "https://raw.githubusercontent.com/ESA-EarthCODE/science-hub-catalog/main/assets",
+  "collections": [
+    "stormtracker"
+  ]
+}
