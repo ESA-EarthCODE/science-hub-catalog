@@ -22,6 +22,14 @@
       ]
     },
     {
+      "rel": "service",
+      "href": "https://parquet-extractor.earthcode.eox.at/data/filtered_parquet?datetime_str={{feature.values_.peak_datetime}}&parent_cluster_id={{feature.values_.parent_cluster_id}}&cluster_id={{feature.values_.cluster_id}}&earthcare_id={{feature.values_.earthcare_id}}&parquet_base_url=https%3A%2F%2Fs3.waw4-1.cloudferro.com%2FEarthCODE%2FOSCAssets%2Fstorm-data%2FEC_lightning_LI&columns_to_extract=geometry&output_format=geojson",
+      "type": "application/geo+json",
+      "id": "reference_points",
+      "method": "GET",
+      "eox:flatstyle": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/assets/stormtracker_subfeatures.json"
+    },
+    {
       "rel": "xyz",
       "href": "https://s2maps-tiles.eu/wmts/1.0.0/s2cloudless-2024_3857/default/g/{z}/{y}/{x}.jpeg",
       "type": "image/jpeg",
@@ -80,6 +88,7 @@
   "themes": [
     "Lightning"
   ],
+  "eodash:jsonform": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/assets/stormtracker_form.json",
   "title": "Storm Tracker",
   "extent": {
     "spatial": {
