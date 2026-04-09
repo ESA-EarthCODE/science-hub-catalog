@@ -15,19 +15,7 @@
   "Resources": [
      {
         "Name": "GeoJSON source",
-        "Style": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/assets/stormtracker_style.json",
-        "TimeEntries": [
-            {
-                "Time": "20250101",
-                "Assets": [
-                    {
-                        "Identifier": "clusters_summary",
-                        "Title": "Clusters Overview",
-                        "File": "https://raw.githubusercontent.com/ESA-EarthCODE/catalog_earthcare_stormtracker/refs/heads/main/assets/EC_lightning_clusters.json"
-                    }
-                ]
-            }
-        ],
+        "ParquetSource": "https://parquet-extractor.earthcode.eox.at/stac/geoparquet?parquet_url=https%3A%2F%2Fs3.waw4-1.cloudferro.com%2FEarthCODE%2FOSCAssets%2Fstorm-data%2FEC_lightning_clusters.parquet",
         "Bbox": [
             -90,
             -180,
