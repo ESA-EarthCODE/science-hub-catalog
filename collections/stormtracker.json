@@ -23,5 +23,17 @@
             180
         ]
     }
-  ]
+  ],
+  "Process": {
+    "Name": "lightning data",
+    "JsonForm": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/assets/stormtracker_form.json",
+    "EndPoints": [
+      {
+        "Identifier": "reference_points",
+        "Url": "https://parquet-extractor.earthcode.eox.at/data/filtered_parquet?datetime_str={{feature.values_.peak_datetime}}&parent_cluster_id={{feature.values_.parent_cluster_id}}&cluster_id={{feature.values_.cluster_id}}&earthcare_id={{feature.values_.earthcare_id}}&parquet_base_url=https%3A%2F%2Fs3.waw4-1.cloudferro.com%2FEarthCODE%2FOSCAssets%2Fstorm-data%2FEC_lightning_LI&columns_to_extract=geometry&output_format=geojson",
+        "Type": "application/geo+json",
+        "Flatstyle": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/assets/stormtracker_subfeatures.json"
+      }
+    ]
+  }
 }
