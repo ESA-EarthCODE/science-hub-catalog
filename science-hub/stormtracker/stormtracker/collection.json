@@ -11,14 +11,6 @@
       "title": "Science Hub Catalog"
     },
     {
-      "rel": "style",
-      "href": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/assets/stormtracker_style.json",
-      "type": "text/vector-styles",
-      "asset:keys": [
-        "clusters_summary"
-      ]
-    },
-    {
       "rel": "parent",
       "href": "../collection.json",
       "type": "application/json",
@@ -35,18 +27,18 @@
     "spatial": {
       "bbox": [
         [
-          -90.0,
           -180.0,
-          90.0,
-          180.0
+          -90.0,
+          180.0,
+          90.0
         ]
       ]
     },
     "temporal": {
       "interval": [
         [
-          "2025-01-01T00:00:00Z",
-          "2025-01-01T00:00:00Z"
+          "2024-08-01T00:00:00Z",
+          "2026-01-01T00:00:00Z"
         ]
       ]
     }
@@ -54,7 +46,7 @@
   "license": "other",
   "assets": {
     "geoparquet": {
-      "href": "./items.parquet",
+      "href": "https://parquet-extractor.earthcode.eox.at/stac/geoparquet?parquet_url=https%3A%2F%2Fs3.waw4-1.cloudferro.com%2FEarthCODE%2FOSCAssets%2Fstorm-data%2FEC_lightning_clusters.parquet",
       "type": "application/vnd.apache.parquet",
       "title": "GeoParquet Items",
       "roles": [
