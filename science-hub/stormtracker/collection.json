@@ -23,7 +23,7 @@
     },
     {
       "rel": "service",
-      "href": "https://parquet-extractor.earthcode.eox.at/data/filtered_parquet?datetime_str={{feature.values_.peak_datetime}}&parent_cluster_id={{feature.values_.parent_cluster_id}}&cluster_id={{feature.values_.cluster_id}}&earthcare_id={{feature.values_.earthcare_id}}&parquet_base_url=https%3A%2F%2Fs3.waw4-1.cloudferro.com%2FEarthCODE%2FOSCAssets%2Fstorm-data%2FEC_lightning_LI&columns_to_extract=geometry&output_format=geojson",
+      "href": "https://parquet-extractor.earthcode.eox.at/data/filtered_parquet?datetime_str={{feature.values_.peak_datetime}}&parent_cluster_id={{feature.values_.parent_cluster_id}}&cluster_id={{feature.values_.cluster_id}}&earthcare_id={{feature.values_.earthcare_id}}&parquet_base_url=https%3A%2F%2Fs3.waw4-1.cloudferro.com%2FEarthCODE%2FOSCAssets%2Fstorm-data%2FEC_lightning_{{feature.values_.source}}&columns_to_extract=geometry&output_format=geojson",
       "type": "application/geo+json",
       "id": "reference_points",
       "method": "GET",
