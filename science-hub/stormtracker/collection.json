@@ -23,11 +23,26 @@
     },
     {
       "rel": "service",
-      "href": "https://parquet-extractor.earthcode.eox.at/data/filtered_parquet?datetime_str={{feature.values_.peak_datetime}}&parent_cluster_id={{feature.values_.parent_cluster_id}}&cluster_id={{feature.values_.cluster_id}}&earthcare_id={{feature.values_.earthcare_id}}&parquet_base_url=https%3A%2F%2Fs3.waw4-1.cloudferro.com%2FEarthCODE%2FOSCAssets%2Fstorm-data%2FEC_lightning_{{feature.values_.source}}&columns_to_extract=geometry&output_format=geojson",
+      "href": "data:application/json,[{\"earthcare_image\":\"https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/assets/stormtracker_plots/{{feature.values_.earthcare_id}}_{{feature.values_.source}}_{{feature.values_.cluster_id}}.png\"}]",
+      "type": "application/json",
+      "id": "earthcare_image",
+      "method": "GET"
+    },
+    {
+      "rel": "service",
+      "href": "https://parquet-extractor.earthcode.eox.at/data/filtered_parquet?datetime_str={{feature.values_.peak_datetime}}&parent_cluster_id=-1&cluster_id={{feature.values_.cluster_id}}&earthcare_id={{feature.values_.earthcare_id}}&parquet_base_url=https%3A%2F%2Fs3.waw4-1.cloudferro.com%2FEarthCODE%2FOSCAssets%2Fstorm-data%2FEC_lightning_{{feature.values_.source}}&columns_to_extract=geometry,flash_id,radiance&output_format=geojson",
       "type": "application/geo+json",
       "id": "reference_points",
       "method": "GET",
       "eox:flatstyle": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/assets/stormtracker_subfeatures.json"
+    },
+    {
+      "rel": "service",
+      "href": "https://parquet-extractor.earthcode.eox.at/data/filtered_parquet?datetime_str=2024-10-26T10%3A00%3A00Z&parent_cluster_id=-1&cluster_id={{feature.values_.cluster_id}}&earthcare_id={{feature.values_.earthcare_id}}&parquet_base_url=https%3A%2F%2Fempty&columns_to_extract=lightning_count_2p5,geometry&exact_parquet_url=https%3A%2F%2Fs3.waw4-1.cloudferro.com%2FEarthCODE%2FOSCAssets%2Fstorm-data%2FEC_track_lightning_{{feature.values_.source}}.parquet&output_format=geojson",
+      "type": "application/geo+json",
+      "id": "track_points",
+      "method": "GET",
+      "eox:flatstyle": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/assets/along_track_style.json"
     },
     {
       "rel": "xyz",
@@ -89,6 +104,7 @@
     "Lightning"
   ],
   "eodash:jsonform": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/assets/stormtracker_form.json",
+  "eodash:vegadefinition": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/assets/chart.json",
   "title": "Storm Tracker",
   "extent": {
     "spatial": {
