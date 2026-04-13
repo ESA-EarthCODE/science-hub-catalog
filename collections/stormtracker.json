@@ -27,7 +27,13 @@
   "Process": {
     "Name": "lightning data",
     "JsonForm": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/assets/stormtracker_form.json",
+    "VegaDefinition": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/assets/chart.json",
     "EndPoints": [
+      {
+        "Identifier": "earthcare_image",
+        "Url": "data:application/json,[{\"earthcare_image\":\"https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/assets/stormtracker_plots/{{feature.values_.earthcare_id}}_{{feature.values_.source}}_{{feature.values_.cluster_id}}.png\"}]",
+        "Type": "application/json"
+      },
       {
         "Identifier": "reference_points",
         "Url": "https://parquet-extractor.earthcode.eox.at/data/filtered_parquet?datetime_str={{feature.values_.peak_datetime}}&parent_cluster_id=-1&cluster_id={{feature.values_.cluster_id}}&earthcare_id={{feature.values_.earthcare_id}}&parquet_base_url=https%3A%2F%2Fs3.waw4-1.cloudferro.com%2FEarthCODE%2FOSCAssets%2Fstorm-data%2FEC_lightning_{{feature.values_.source}}&columns_to_extract=geometry,flash_id,radiance&output_format=geojson",
