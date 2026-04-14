@@ -2,7 +2,7 @@
   "type": "Collection",
   "id": "stormtracker",
   "stac_version": "1.1.0",
-  "description": "### EarthCARE & Lightning Cluster Analysis\n\nThis indicator visualizes the correlation between localized lightning events and EarthCARE satellite overpasses. \n\n**Interaction:**\nSelect a lightning cluster point on the map to dynamically load the following data:\n\n* **Detailed Lightning Points (Map):** Individual lightning events comprising the cluster. \n    * *Color:* Indicates the specific lightning group (`flash_id`).\n    * *Opacity:* Represents the physical brightness/energy (`radiance`).\n* **EarthCARE Track (Map):** Points along the satellite's orbital trajectory.\n    * *Color (Viridis scale):* Indicates the count of lightning groups detected at that specific track crossing.\n* **Profile Plot (Process Panel):** Located in the bottom right, this panel displays a comprehensive plot image containing:\n    * EarthCARE imagery showing various atmospheric parameters.\n    * A line chart overlay representing the associated lightning group counts along the track.",
+  "description": "This dashboard helps users identify and explore lightning storm events recorded during EarthCARE overpasses. By filtering the lightning storm catalogue, users can visualize lightning activity in the context of coincident EarthCARE observations.\n\n**Interaction:**\nSelect a lightning cluster point on the map to dynamically load the following data:\n\n* **Detailed Lightning Points (Map):** Individual lightning events comprising the cluster \n    * *Color:* Indicates the specific lightning group (`flash_id`)\n    * *Opacity:* Represents the physical brightness/energy (`radiance`)\n\n* **EarthCARE Track (Map):** Points along the satellite's orbital trajectory\n    * *Color (Viridis scale):* Indicates the count of lightning groups detected at that specific track crossing\n\n* **Profile Plot (Process Panel):** Located in the bottom right, this panel displays a plot\n    * A line chart representing the associated lightning group counts along the track\n    * EarthCARE imagery showing various atmospheric parameters\n    ",
   "links": [
     {
       "rel": "root",
@@ -17,7 +17,7 @@
       "title": "EarthCARE Lightning Storm Tracker"
     }
   ],
-  "thumbnail": "https://raw.githubusercontent.com/ESA-EarthCODE/science-hub-catalog/main/assets/test.png",
+  "thumbnail": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/assets/storm_preview.jpg",
   "themes": [
     "Lightning"
   ],
@@ -54,16 +54,32 @@
       ]
     },
     "thumbnail": {
-      "href": "https://raw.githubusercontent.com/ESA-EarthCODE/science-hub-catalog/main/assets/test.png",
+      "href": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/assets/storm_preview.jpg",
       "type": "image/png",
       "roles": [
         "thumbnail"
       ]
     },
     "reference_1": {
+      "href": "https://opensciencedata.esa.int/external/s3.waw4-1.cloudferro.com/EarthCODE/Catalogs/storm-data/earthcare-frame-lightning/collection",
+      "type": "text/html",
+      "title": "Open Science Catalog",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_2": {
+      "href": "https://eo4society.esa.int/2025/12/03/heino-tooming-award-2025-goes-to-blanka-piskala/",
+      "type": "text/html",
+      "title": "Heino Tooming award 2025",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "reference_3": {
       "href": "https://catalog.maap.eo.esa.int/doc/examples/ESAMAAP_ecdataaccess.html",
       "type": "text/html",
-      "title": "Link",
+      "title": "ESA MAAP",
       "roles": [
         "metadata"
       ]
