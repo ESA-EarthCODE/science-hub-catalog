@@ -8,7 +8,7 @@ Catalog is available under:
 
 Using STAC browser, e.g.:
 
-[https://radiantearth.github.io/stac-browser/#/external/esa-earthcode.github.io/science-hub-catalog/science-hub/catalog.json](https://radiantearth.github.io/stac-browser/#/external/esa-earthcode.github.io/science-hub-catalog/science-hub/catalog.json)
+[https://browser.moregeo.it/external/esa-earthcode.github.io/science-hub-catalog/science-hub/catalog.json](https://browser.moregeo.it/external/esa-earthcode.github.io/science-hub-catalog/science-hub/catalog.json)
 
 
 Further information on contained datasets:
