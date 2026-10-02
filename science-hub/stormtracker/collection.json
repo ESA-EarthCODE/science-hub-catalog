@@ -19,6 +19,9 @@
       "id": "stormtracker",
       "themes": [
         "Lightning"
+      ],
+      "thumbnail": [
+        "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/assets/storm_preview.jpg"
       ]
     },
     {
@@ -26,7 +29,8 @@
       "href": "data:application/json,[{\"earthcare_image\":\"https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/assets/stormtracker_plots/{{feature.values_.earthcare_id}}_{{feature.values_.source}}_{{feature.values_.cluster_id}}.png\"}]",
       "type": "application/json",
       "id": "earthcare_image",
-      "method": "GET"
+      "method": "GET",
+      "title": "EarthCARE Image"
     },
     {
       "rel": "service",
@@ -34,6 +38,7 @@
       "type": "application/geo+json",
       "id": "reference_points",
       "method": "GET",
+      "title": "Detailed Lightning Points",
       "eox:flatstyle": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/assets/stormtracker_subfeatures.json"
     },
     {
@@ -42,6 +47,7 @@
       "type": "application/geo+json",
       "id": "track_points",
       "method": "GET",
+      "title": "EarthCARE Track",
       "eox:flatstyle": "https://workspace-ui-public.gtif-austria.hub-otc.eox.at/api/public/share/public-4wazei3y-02/assets/along_track_style.json"
     },
     {
