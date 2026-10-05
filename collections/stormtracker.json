@@ -23,7 +23,7 @@
   "Resources": [
      {
         "Name": "GeoJSON source",
-        "ParquetSource": "https://parquet-extractor.earthcode.eox.at/stac/geoparquet?parquet_url=https%3A%2F%2Fs3.waw4-1.cloudferro.com%2FEarthCODE%2FOSCAssets%2Fstorm-data%2FEC_lightning_clusters.parquet",
+        "ParquetSource": "https://parquet-extractor.earthcode.eox.at/stac/geoparquet?parquet_url=https%3A%2F%2Fs3.waw4-1.cloudferro.com%2FEarthCODE%2FOSCAssets%2Fstorm-data%2FEC_lightning_clusters.parquet&style_url=https://workspace-ui-public.earthcode-publishing-support.earthcode.eox.at/api/public/share/public-3a71hc0d3-101/stormtracker_filter_style.json&split=false",
         "Bbox": [
             -90,
             -180,
