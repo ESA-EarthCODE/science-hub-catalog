@@ -41,7 +41,7 @@
       "interval": [
         [
           "2024-08-01T00:00:00Z",
-          "2025-07-31T23:59:59.999999Z"
+          "2024-08-01T00:00:00Z"
         ]
       ]
     }
@@ -49,10 +49,10 @@
   "license": "other",
   "assets": {
     "geoparquet": {
-      "href": "https://parquet-extractor.earthcode.eox.at/stac/geoparquet?parquet_url=https%3A%2F%2Fs3.waw4-1.cloudferro.com%2FEarthCODE%2FOSCAssets%2Fstorm-data%2FEC_lightning_clusters.parquet",
+      "href": "https://parquet-extractor.earthcode.eox.at/stac/geoparquet?parquet_url=https%3A%2F%2Fs3.waw4-1.cloudferro.com%2FEarthCODE%2FOSCAssets%2Fstorm-data%2FEC_lightning_clusters.parquet&style_url=https://workspace-ui-public.earthcode-publishing-support.earthcode.eox.at/api/public/share/public-3a71hc0d3-101/stormtracker_filter_style.json&split=false",
       "type": "application/vnd.apache.parquet",
       "title": "GeoParquet Items",
-      "file:size": 20018,
+      "file:size": 20076,
       "roles": [
         "collection-mirror"
       ]
